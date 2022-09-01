@@ -3,11 +3,6 @@ public class MethodsHere {
     please follow Guzel Worklow and paste your methods here at the end of the file
      */
 
-    public static void main(String[] args) {
-        prefixAgain("abXYabc",1);
-    }
-
-
 
     /*
       Given a string, consider the prefix string made of the first N chars of the string. Does that prefix string
@@ -31,7 +26,7 @@ public class MethodsHere {
         }
         return false;
 
-    }//methods end here
+    }//method end here
 }
 
 
