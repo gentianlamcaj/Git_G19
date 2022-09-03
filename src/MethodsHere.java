@@ -84,7 +84,7 @@ public class MethodsHere {
 
 // Zoubair: random code for practice
 
-    public static void main(String[] args) {
+ /*   public static void main(String[] args) {
         String s = "java";
         //          0123
         System.out.println("First character " + s.charAt(0));
@@ -96,8 +96,24 @@ public class MethodsHere {
         // System.out.println("Invalid  character " + s.charAt(100)); is not a valid index in our string
 
 
-    }
+    }  */
 
+    /*
+    Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+
+
+stringBits("Hello") → "Hlo"
+stringBits("Hi") → "H"
+stringBits("Heeololeo") → "Hello"
+     */
+
+    public String stringMadeOfEveryOtherChar (String str){
+        String result="";
+        for (int i=0; i<str.length(); i=i+2){
+            result+=""+str.charAt(i);
+        }
+        return result;
+    }
 
 }
 
