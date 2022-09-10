@@ -84,7 +84,7 @@ public class MethodsHere {
 
 // Zoubair: random code for practice
 
-    public static void main(String[] args) {
+ /*   public static void main(String[] args) {
         String s = "java";
         //          0123
         System.out.println("First character " + s.charAt(0));
@@ -96,6 +96,60 @@ public class MethodsHere {
         // System.out.println("Invalid  character " + s.charAt(100)); is not a valid index in our string
 
 
+    }  */
+
+    /*
+    Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+
+
+stringBits("Hello") → "Hlo"
+stringBits("Hi") → "H"
+stringBits("Heeololeo") → "Hello"
+     */
+
+    public String stringMadeOfEveryOtherChar (String str){
+        String result="";
+        for (int i=0; i<str.length(); i=i+2){
+            result+=""+str.charAt(i);
+        }
+        return result;
+    }
+
+    /*
+    Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with "edited".
+
+    frontAgain("edited") → true
+    frontAgain("edit") → false
+    frontAgain("ed") → true
+     */
+
+    public boolean frontAgain(String str) {
+
+        if (str.length() < 2) {
+            return false;
+        }
+
+        String front = str.substring(0, 2);
+        String end = str.substring(str.length() - 2);
+        return front.equals(end);
+
+
+    }
+
+    /*
+        Beyza:
+            Given a string, return a string where for every char in the original, there are two chars.
+    */
+    public String doubleChar(String str) {
+
+        String result="";
+
+        for(int i = 0; i < str.length(); i++){
+            char letter = str.charAt(i);
+            result += "" + letter + letter;
+        }
+
+        return result;
     }
 
     /*
