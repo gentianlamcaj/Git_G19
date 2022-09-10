@@ -105,6 +105,12 @@ sum28([2, 3, 2, 2, 4, 2, 2]) → false
 sum28([1, 2, 3, 4]) → false
      */
 
+    public boolean sum28(int[] nums) {
+        int sum=0;
+
+
+        return (sum==8);
+    }
 
 }
 
