@@ -164,6 +164,23 @@ public boolean lessBy10(int a, int b, int c) {
 }
 
 
+    //Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the star, they are the same.
+
+    public boolean sameStarChar(String str) {
+        int count1 = 0;
+        int count2 = 0;
+        for(int i = 1; i < str.length()-1; i++){
+            if(str.charAt(i) == '*'){
+                count1++;
+                if(str.charAt(i-1) == str.charAt(i+1))
+                    count2++;
+            }
+        }
+        if(count1 == count2)
+            return true;
+        return false;
+    }
+
 
 }
 
